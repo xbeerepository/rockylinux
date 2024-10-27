@@ -1,16 +1,4 @@
 schema-version: 1.0
 
 system:
-#    container:
-#    builder:
-
-user: "{{ .xbee.user }}"
-directory: "{{ .xbee.app }}"
-
-dev:
-
-provider:
-
-dependency:
-
-provision:
+  container: "{{ .xbee.name }}:{{ .xbee.ref }}"
