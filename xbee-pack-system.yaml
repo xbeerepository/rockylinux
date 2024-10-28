@@ -2,3 +2,52 @@ schema-version: 1.0
 
 system:
   container: "{{ .xbee.name }}:{{ .xbee.ref }}"
+  user: rocky
+
+provider:
+  aws:
+    amis:
+      linux_amd64:
+        us-east-2: ami-067daee80a6d36ac0
+        ap-southeast-1: ami-049c1087a50db0d60
+        us-west-2: ami-093bd987f8e53e1f2
+        sa-east-1: ami-06d5b8485a5ee86ce
+        ap-northeast-2: ami-08a431d76d4429bcd
+        eu-central-1: ami-01af7acf3c778d87d
+        eu-south-1: ami-09bf5316afde4a70d
+        eu-north-1: ami-08f29e6dd99e5bea1
+        ap-northeast-1: ami-0940718254cbd517b
+        ap-southeast-2: ami-08e0054de87d9d01a
+        ca-central-1: ami-019b5b9c9dd128960
+        ap-south-1: ami-0b745a6c6b9c26870
+        us-west-1: ami-03d59b4816aa0d554
+        me-south-1: ami-020b59a011dfe0d85
+        us-east-1: ami-021a1f96fec61f4e9
+        af-south-1: ami-0bd7a7474fb8794fe
+        ap-east-1: ami-09377502f4186b611
+        ap-northeast-3: ami-03bf8adb6637493cb
+        eu-west-3: ami-085e6178ad1f1e576
+        eu-west-2: ami-0bc3251bde9546dc7
+        eu-west-1: ami-00d1b899f7d8757f6
+      linux_arm64:
+          me-south-1: ami-0e98b9d2c7951d0dc
+          us-east-1: ami-01c1aa264563c4eac
+          ap-east-1: ami-04470b41e57d7536d
+          sa-east-1: ami-00160b62ea0fb2df5
+          ap-northeast-2: ami-07de6773ce424bb52
+          eu-south-1: ami-0af36e352ba7106fd
+          eu-north-1: ami-0bdbb4cfe76a0d9e6
+          ap-northeast-1: ami-0f9fc4a8453affbb1
+          ap-southeast-2: ami-01e3d9675ff79134d
+          eu-west-3: ami-04378ef20a38eecb6
+          eu-west-2: ami-067abd7ca859d24b2
+          us-east-2: ami-034ee457b85b2fb4f
+          af-south-1: ami-014c277a7cf7bb545
+          us-west-1: ami-0003e55601ad1b050
+          ap-northeast-3: ami-016329e18e3cc3ac2
+          eu-central-1: ami-043c5144484c4ff60
+          eu-west-1: ami-07f7f2d8dd1d72056
+          ca-central-1: ami-083c13dae589613ef
+          ap-south-1: ami-01f4407200fe15d0b
+          ap-southeast-1: ami-039825655c5403c19
+          us-west-2: ami-0eaf5b3d4e632da35
