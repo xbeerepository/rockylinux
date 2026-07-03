@@ -2,6 +2,7 @@ schema-version: 1.0
 
 system:
     container: rockylinux/rockylinux:{{ .xbee.ref }}
+    user: rocky
 
 provider:
     aws:
