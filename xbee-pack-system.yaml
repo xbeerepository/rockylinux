@@ -1,16 +1,74 @@
 schema-version: 1.0
 
 system:
-#    container:
-#    builder:
-
-user: "{{ .xbee.user }}"
-directory: "{{ .xbee.app }}"
-
-dev:
+    container: rockylinux/rockylinux:{{ .xbee.ref }}
 
 provider:
-
-dependency:
-
-provision:
+    aws:
+        amis:
+            linux_arm64:
+                eu-west-3: ami-063247cd7ed4adf92
+                il-central-1: ami-0da6aae6e3835959a
+                ap-south-2: ami-01f1832571acc42fa
+                eu-central-1: ami-00869af02a7d7f478
+                eu-south-1: ami-0347a9230364378c2
+                us-east-1: ami-0a855d3e8319961ac
+                us-west-2: ami-0fd4edb266a6c00de
+                eu-south-2: ami-01a62e39171a4f4b1
+                eu-north-1: ami-05fa76c8bb5c27b0f
+                ap-south-1: ami-0076153274fd1c00c
+                us-west-1: ami-0e579dda97f462b90
+                ap-southeast-3: ami-0e5d556c680d238c6
+                ap-east-2: ami-023f04da8e2f4272e
+                eu-west-2: ami-051a456d7fbce7f2f
+                eu-west-1: ami-0eacc6cc7c21b64c1
+                ca-central-1: ami-0a2548ab801784474
+                ca-west-1: ami-05c0b0cb66819728d
+                me-central-1: ami-024b864e6d54202f2
+                ap-southeast-1: ami-02c6be6170fd353d8
+                us-east-2: ami-0459998e327948acc
+                mx-central-1: ami-0dee716da58252953
+                ap-northeast-2: ami-0b04ce44061b9a1a3
+                ap-northeast-3: ami-0a6404d8946344681
+                ap-southeast-4: ami-0f7f9b669a496f773
+                eu-central-2: ami-0105df1e318a38dac
+                ap-southeast-5: ami-0f2fe8c06af72a9aa
+                af-south-1: ami-0414d4a7174b36089
+                ap-southeast-7: ami-00d5979fb4cb37c51
+                ap-southeast-2: ami-0d0c25527c63a134c
+                sa-east-1: ami-094200a77a05c0480
+                ap-east-1: ami-04e1c6266cd6a9356
+                ap-northeast-1: ami-0d278ab7ea760a985
+            linux_amd64:
+                mx-central-1: ami-05043edea007c8da8
+                us-west-2: ami-0cf8a2c7a812b1346
+                ap-east-2: ami-083b23c57fbda78de
+                ap-southeast-1: ami-015e5716efe74df5a
+                ap-northeast-3: ami-03feb6e2eb64f16a9
+                ap-southeast-4: ami-070672e8f9ab41ba2
+                us-east-1: ami-0588b361e4987b47f
+                ap-south-1: ami-0b64c938a75fead4c
+                us-west-1: ami-0255fdbc12ce27df4
+                il-central-1: ami-0056254c64fb51468
+                ap-southeast-5: ami-00c2defb952118aa3
+                ap-southeast-7: ami-0d490dbbf177b867a
+                ap-northeast-2: ami-006910c209e47afea
+                eu-west-3: ami-09f50a3287ee6ce40
+                ca-central-1: ami-0801a6e8b4b536338
+                ap-southeast-3: ami-09b799cbbe230069a
+                eu-central-2: ami-01656a713613ad012
+                eu-south-2: ami-09831203ad93fb554
+                eu-south-1: ami-0618d458d8e3c7290
+                eu-west-2: ami-0e50535322be40743
+                eu-west-1: ami-059c7b760c81b6b6f
+                eu-north-1: ami-0d9820567fb49898d
+                us-east-2: ami-05f4b2aeddab1b41e
+                af-south-1: ami-00eac6f0f47074b07
+                ca-west-1: ami-03dc45685033e26f5
+                me-central-1: ami-08c29ec0aaf26926f
+                sa-east-1: ami-081fea62262670cae
+                ap-northeast-1: ami-0a3fcea5506cf880b
+                eu-central-1: ami-0135e7946c38e9489
+                ap-south-2: ami-079d26cb54fb4d028
+                ap-east-1: ami-0306a0a0fafadfb7f
+                ap-southeast-2: ami-0155e7b9a3d8c75fd
