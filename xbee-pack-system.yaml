@@ -73,3 +73,23 @@ provider:
                 us-east-2: ami-0c4ea4e10ad9e016c
                 us-west-1: ami-014c5fc652e6985a2
                 us-west-2: ami-096df8f96e4af4afe
+    gcp:
+        image:
+            linux_amd64:
+                project: rocky-linux-cloud
+                family: rocky-linux-9
+            linux_arm64:
+                project: rocky-linux-cloud
+                family: rocky-linux-9-arm64
+    azure:
+        image:
+            linux_amd64:
+                publisher: resf
+                offer: rockylinux-x86_64
+                sku: 9-base
+                version: latest
+            linux_arm64:
+                publisher: resf
+                offer: rockylinux-aarch64
+                sku: rockylinux-aarch64-9
+                version: latest
