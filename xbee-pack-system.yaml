@@ -73,3 +73,15 @@ provider:
                 ap-south-2: ami-079d26cb54fb4d028
                 ap-east-1: ami-0306a0a0fafadfb7f
                 ap-southeast-2: ami-0155e7b9a3d8c75fd
+    gcp:
+        image:
+            linux_amd64:
+                project: rocky-linux-cloud
+                family: rocky-linux-10
+            linux_arm64:
+                project: rocky-linux-cloud
+                family: rocky-linux-10-arm64
+    # azure: pas encore disponible - RockyLinux 10 n'a aucune image publiée sur
+    # Azure Marketplace au moment de cette mise à jour (SKU "10-base" listée chez le
+    # publisher "resf" mais sans version résolvable, vérifié via
+    # `az vm image list --publisher resf --offer rockylinux-x86_64 --sku 10-base --all`)
