@@ -6,7 +6,7 @@ system:
 
 provider:
     aws:
-        amis:
+        ami:
             linux_amd64:
                 af-south-1: ami-00eac6f0f47074b07
                 ap-east-1: ami-0306a0a0fafadfb7f
