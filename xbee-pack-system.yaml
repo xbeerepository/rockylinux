@@ -5,6 +5,8 @@ system:
     user: rocky
 
 provider:
+    ovh:
+        image: Rocky Linux 9
     aws:
         ami:
             linux_amd64:
