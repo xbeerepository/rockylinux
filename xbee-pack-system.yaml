@@ -5,6 +5,9 @@ system:
     user: rocky
 
 provider:
+    ionos:
+        imageAlias:
+            linux_amd64: rocky:9
     ovh:
         image: Rocky Linux 9
     aws:
